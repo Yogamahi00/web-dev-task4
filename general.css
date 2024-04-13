@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+.outer{
+    background-image: url(images/0b5d7606c7df99f737a4f4c467e8ccf1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height:95vh ;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.inner{
+    background-color: black;border-radius: 20px;box-shadow: 0 0 20px 5px #ff004f;
+}
+.heading{
+    margin-top: 7.5rem;
+    background-color: transparent;
+    backdrop-filter: blur(2px);   
+}
+.heading-text1{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.heading-text2{
+    color: whitesmoke;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+.heading-text3{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+
+.heading{
+    color: white;
+}
+
+
+.cardd{
+    border: 2px solid #ff004f;
+    border-radius:20px;
+    transition: .5s all;
+}
+
+.cardd:hover{
+    #play-btn{
+        background-color: #ff004f;
+        color: black;
+    }
+}
+
+.movie-img{
+    border-radius: 20px 20px 0 0;
+    object-fit:cover ;
+    width: 100%;
+}
+
+#movie-title{
+    font-size: large;
+    font-weight: 500;
+    padding-top: 10px;
+    color: #ff0055;
+    transition: .5s all;
+}
+
+#movie-genre{
+    font-size: 2.7rem;
+    font-weight: 700;
+    padding-top: 15px;
+    color: #ff004f;
+    
+}
+
+.search-icon{
+  
+    font-size: 2.4rem;
+    color: #ff0055;
+    
+}
+
+#search-bar{
+    border:3px solid #ff004f;
+    border-radius: 30px;
+}
+
+
+#play-btn{
+    border: 2px solid #ff004f;
+    margin-bottom: 8px;
+    color: #ff004f;
+    font-weight: 530;
+    border-radius: 6px;
+    background-color: black;
+}
+
+
+@media (max-width:600px){
+    .outer{
+        background-image: url(images/thibault-penin-3HInbCmQ8ro-unsplash.jpg);
+    }
+
+    #movie-genre{
+        font-size: x-large;
+    }
+    
+    #movie-title{
+    font-size: medium;
+    font-weight: 500;
+    }
+    #play-btn{
+        font-size: small;
+        padding: 5px;
+    }
+   .heading-text1{
+    font-size: 2rem;
+   }
+   .heading-text2{
+    font-size: 1.5rem;
+   }
+   .heading-text3{
+    font-size: 1rem;
+   }
+}
+
+@media (min-width:600px) and (max-width:1000px){
+    .heading-text1{
+        font-size: 2.5rem;
+       }
+       .heading-text2{
+        font-size: 2rem;
+       }
+       .heading-text3{
+        font-size: 1.5rem;
+       }
+}
